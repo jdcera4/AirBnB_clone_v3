@@ -15,6 +15,7 @@ def restart_data(exception):
     """close session so the new data is outputed"""
     storage.close()
 
+
 @app.errorhandler(404)
 def page_not_found(error):
     """ Return json page mot found """
